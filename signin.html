@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="css\bootstrap.min.css" rel="stylesheet">
+	<script src="signin.js"></script>
+</head>
+<style>
+	body {
+		background-color: #EDF1FC;
+	}
+</style>
+
+<body>
+	<div class="container rounded-4 bg-light w-75 py-5 my-5">
+		<div class="row">
+			<div class="col-sm-12">
+				<img src="pics\googlelogo.jpg" class="ms-3 mt-2 d-block">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 px-4 py-4">
+				<h2>Sign in</h2>
+				<p>to continue to Gmail</p>
+			</div>
+			<div class="col-md-6 form-floating  float-end">
+				<br>
+				<input type="text" class="form-control border border-secondary" id="email" onblur="empty()"
+					placeholder="Email or phone">
+
+				<p id="emailp" class="text-danger" style="display:none;">Please enter a valid email address!</p>
+				<label for="email" class="p-4 mt-3">Email or Phone</label>
+				<a href="#" class="text-decoration-none text-primary">Forgot Email?</a><br>
+				<br>
+
+				<p>Not your computer? Use Guest mode to sign in privately. </p>
+				<a href="#" class="text-decoration-none text-primary">Learn more about using guest mode</a>
+				<br>
+				<br>
+				<a href="#" class="btn rounded-pill btn-light text-primary text-decoration-none">Create Account</a>
+				<button type="button" class="btn rounded-pill btn-primary float-end" onclick="validate()">Next</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
